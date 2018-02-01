@@ -1,0 +1,3 @@
+It's a rather straightforward problem, if a bit tedious.
+
+Basically you do an interpreter for the language. You set up two maps, one for word -> value and one for value -> word. Remember to update both maps at once!

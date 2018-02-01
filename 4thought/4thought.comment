@@ -1,0 +1,3 @@
+Honestly this solution is kinda cheating cause I hardcode everything
+
+Basically I generate a list of all allowed expressions, calculate their values then create an assoc list of value -> expression. And I'm done!

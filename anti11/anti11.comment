@@ -1,0 +1,15 @@
+To solve this problem, notice what happens when you build the strings right-to-left. If the string starts with a 0, you can paste 0 or 1 to the left, but if it starts with 1 you can only paste a 0 (cause otherwise 11 would appear). 
+
+So define these sequences:
+a1(n) -> number of sequences with length n starting with 1
+a0(n)
+aa(n) -> number of sequences total, obviously a1(n) + a0(n) = aa(n).
+
+Then define the recursions:
+a1(1) = 1
+a1(n) = a0(n-1)
+
+a0(1) = 1
+a0(n) = a0(n-1) + a1(n-1)
+
+and see what you get from that.
